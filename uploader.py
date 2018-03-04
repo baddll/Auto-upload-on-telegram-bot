@@ -29,7 +29,7 @@ def handle_start_help(message):
                 for filename in fnmatch.filter(files, pattern):
                     fullname = os.path.join(folder, filename)
                     lis.append(fullname)
-            count = count + 1
+            count += 1
     except:
         print('end list appends')
 
@@ -40,7 +40,7 @@ def handle_start_help(message):
             x = (lis[a].replace('\\', '\\'))
             print(x)
             bot.send_audio(message.chat.id, audio=open(x, 'rb'), timeout=10)
-            a = a + 1
+            a += 1
     except:
         print('ooops')
 
