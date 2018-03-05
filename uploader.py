@@ -38,7 +38,6 @@ def handle_start_help(message):
         while a <= len(lis):
             print(a)
             x = (lis[a].replace('\\', '\\'))
-            print(x)
             bot.send_audio(message.chat.id, audio=open(x, 'rb'), timeout=10)
             a += 1
     except:
