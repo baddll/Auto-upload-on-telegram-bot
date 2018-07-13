@@ -24,7 +24,7 @@ def handle_start_help(message):
     count = 0
 
     try:
-        while count == count:
+        while True:
             for folder, subdirs, files in os.walk(music_folder + Name_subfolder(Ch)):
                 for filename in fnmatch.filter(files, pattern):
                     fullname = os.path.join(folder, filename)
